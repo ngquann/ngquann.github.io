@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pd-7px {
+    padding-right: 7px;
+}
+
+.pdt-7px {
+    padding-top: 7px;
+}
+
+.pdb-7px {
+    padding-bottom: 7px;
+}
+
+.main {
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+}
+
+.year {
+    background-color: #ef5321;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    height: 18%;
+    padding-top: 8px;
+}
+
+.year p, .day_month p:nth-child(2) {
+    font-size: 16px;
+}
+
+
+.day_month{
+    background-color: #fe6d3f;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 82%;
+    padding-top: 18px;
+}
+
+.day_month p:first-child {
+    font-size: 40px;
+}
+.time {
+    border-radius: 2px;
+    height: 160px;
+}
+
+.content {
+    padding: 16px 24px 0;
+
+}
+
+.content h3 a{
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.content p:nth-child(2) {
+    font-size: 14px;
+    color: #464646;
+    line-height: 21px;
+
+}
+
+.ma-t5 {
+    margin-top: 5px;
+    color: #464646;
+    font-size: 14px;
+}
+
+.register {
+    text-decoration: none;
+    color: #3c78e8;
+    font-size: 16px;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 5px;
+} 
