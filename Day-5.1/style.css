@@ -15,7 +15,7 @@ body {
     display: flex;
 }
 
-.main, .main_2, .main_3 {
+.main {
     width: 200px;
     height: 344px;
     position: relative;
@@ -23,10 +23,13 @@ body {
     background-color: #fff;
 }
 
+.main> ul li{
+    list-style: none; /* bỏ dấu chấm mặc định của li */
+}
 .main ul {
     display: block;
 }
-.main li, .main_2 li, .main_3 li {
+.main li {
     font-size: 13px;
     line-height: 27px;
     color: #757575;
@@ -34,29 +37,31 @@ body {
     padding-left: 8px;
 }
 
-.main_2, .main_3 {
-    display: none;
-}
-
-li {
-    /* display: block; */
-    list-style-type: none;
-}
-a {
+.main> ul li a{
     display: block;
-}
+    text-decoration: none;
+} 
 
-.main li:hover {
+.main ul li:hover {
     color: rgb(235, 123, 82);
-    background-color: rgb(214, 209, 209);
+    background-color: rgb(228, 220, 220);
     
 }
 
-.main li:hover .main_2{
-    display: block;
+.main li ul{
+    display: none;
+    min-width: 200px;
+    height: 344px;
     position: absolute;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
+    left: 199px;
+    top: 0px;
+    background-color: white;
+    padding-top: 16px;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+
 }
+
+.main li:hover >ul{
+    display:  block;
+}
+
